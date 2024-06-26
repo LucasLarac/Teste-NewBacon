@@ -1,0 +1,7 @@
+.user-list {
+    width: 592px;
+    height: 761px;
+    top: 96px;
+    left: 344px;
+    position: absolute; /* Adicionando position: absolute para que top e left funcionem */
+  }
