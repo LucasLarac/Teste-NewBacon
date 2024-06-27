@@ -111,47 +111,33 @@ methods: {
 </script>
 
 <style scoped>
-button {
-  background-color: black;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  display: block;
-
-}
-.icon{
-  background-color: transparent;
-  background-image: none; 
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
 }
 
-.save{
-  background-color: black;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  display: block;
-    padding: 10px;
-  margin-bottom: 15px;
+.userlist {
   width: 100%; 
+  max-width: 600px; 
+  margin: 0 auto; 
+  padding: 20px; 
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-sizing: border-box;
 }
 
-label{
-  color: black;
-  display: block;
-  text-align: left;
-}
-
-button.cancelar-btn {
-  background-color: rgb(226, 226, 226);
-  color: black;
+.user-actions button {
+  background-color: transparent;
   border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
   cursor: pointer;
+  padding: 10px;
 }
 
 .header {
@@ -161,25 +147,22 @@ button.cancelar-btn {
   margin-bottom: 20px;
 }
 
-.userlist {
-  width: 100%; 
-  max-width: 600px; 
-  margin: 0 auto; 
-  padding: 10px; 
-}
-
 .user-item {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
   background-color: rgb(224, 224, 224);
   padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
 }
 
 .avatar {
   width: 80px; 
   height: auto;
   margin-right: 20px;
+  border-radius: 50%;
 }
 
 .user-details {
@@ -197,6 +180,9 @@ button.cancelar-btn {
   margin: 20px auto; 
   padding: 20px;
   box-sizing: border-box;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .user-form input,
@@ -209,10 +195,48 @@ button.cancelar-btn {
   border-radius: 5px;
 }
 
+button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+}
+
+button.cancelar-btn {
+  background-color: rgb(226, 226, 226);
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+}
+
+.save {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 100%; 
+}
+
+label {
+  color: black;
+  display: block;
+  text-align: left;
+}
+
 h2 {
   color: black;
 }
-
 
 .user-actions {
   display: flex;
@@ -234,8 +258,6 @@ h2 {
     align-items: flex-start;
   }
 
-
-
   .avatar {
     width: 100%;
     margin-right: 0; 
@@ -256,4 +278,5 @@ h2 {
     margin-top: 10px;
   }
 }
+
 </style>
