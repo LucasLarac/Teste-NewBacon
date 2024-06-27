@@ -24,7 +24,7 @@
 
       </div>
     </div>
-    <div v-else>
+    <div v-else-if="showMessage">
       <p>Usuário não encontrado.</p>
     </div>
   </div>
@@ -42,8 +42,16 @@ export default {
   data() {
     return {
       usuario: null,
-      support: null
+      support: null,
+      showMessage: false
     };
+  },
+  mounted() {
+    setTimeout(() => {
+      if (!this.usuario) {
+        this.showMessage = true;
+      }
+    }, 5000);
   },
   created() {
     this.fetchUserDetails();
@@ -57,6 +65,7 @@ export default {
         console.error('Erro ao carregar detalhes do usuário:', error);
       }
     },
+    
     voltar() {
       this.$router.go(-1);
     }
