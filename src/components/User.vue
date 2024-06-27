@@ -75,9 +75,14 @@ export default {
 
 <style scoped>
 .user {
-  padding: 20px;
-  max-width: 450px;
-  margin: 0 auto;
+  width: 100%; 
+  max-width: 600px; 
+  margin: 0 auto; 
+  padding: 20px; 
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-sizing: border-box;
 }
 
 .infos {
